@@ -12,9 +12,32 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
-	</head>
-	<body>
-		<!-- Your layout here -->
+    
+    <style>
+        .screen {
+          height: 680px;
+          background-color: purple;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-content: flex-start;
+        }
 
-	</body>
+        .box {
+          background-color: orange;
+          height: 680px;
+          width: 400px;
+          margin: 0px 15px;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- Your layout here -->
+      <div class = "screen">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </body>
 </html>
